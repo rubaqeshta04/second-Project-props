@@ -1,27 +1,29 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import Artical from "./Artical";
+import Header from "./components/Header/Header.jsx";
+import Post from "./components/Post/Post.jsx";
+import Side from "./components/Side/Side.jsx";
+import Button from "./components/Button/Button.jsx";
 import "./App.css";
 
 function App() {
-  const firstArtical = `
-  aaaaaa
-  cccc
-  ddddd`;
-
-  const secondArtical = `
-  alyaa
-  ccccc
-     jjkkk`;
   return (
     <>
-      <h1 className="bg-red-500">ruba</h1>
-      <Artical name="Ahmed" email="ahmad@gmail.com" content = {firstArtical}>
-        <h1>hello world</h1>
-      </Artical>
-      <Artical name="Ali" email="ali@gmail.com" />
-      <Artical name="Ruba" email="ruba@gmail.com" />
+      <Header />
+      <div className="flex justify-center m-10">
+        <div className="flex justify-center items-center w-full gap-4">
+          <div className=" text-center w-[70%] ">
+            <Post
+              number="20"
+              name="اكاديمية ترميز"
+              description="اكاديمية مخصصة لتعليم البرمجة بقنياتها "
+            />
+            <Post name="js" description="ppppppppppppppppp" />
+            <Post name="react" description="cccccccccccccccc" />
+          </div>
+          <div className=" w-[30%]">
+            <Side />
+          </div>
+        </div>
+      </div>
     </>
   );
 }
