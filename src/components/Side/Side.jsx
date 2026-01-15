@@ -1,4 +1,5 @@
 import Button from "../Button/Button";
+import img19 from "../../assets/19.jpeg";
 
 function Side() {
   return (
@@ -6,25 +7,29 @@ function Side() {
       <Button name="جديدة">
         <div className="flex flex-col items-center">
           <span>😊😊😊</span>
-          <img src="../../../public/assets/19.jpeg" className="w-30" />
+
+          <img src={img19} className="w-24 h-24 object-cover" />
         </div>
       </Button>
       <Button name="جديدة">
         <div className="flex flex-col items-center">
           <span>😊😊😊</span>
-          <img src="../../../public/assets/19.jpeg" className="w-30" />
+
+          <img src={img19} className="w-24 h-24 object-cover" />
         </div>
       </Button>
       <Button name="جديدة">
         <div className="flex flex-col items-center">
           <span>😊😊😊</span>
-          <img src="../../../public/assets/19.jpeg" className="w-30" />
+
+          <img src={img19} className="w-24 h-24 object-cover" />
         </div>
       </Button>
       <Button name="جديدة">
         <div>
           <span>😊😊😊</span>
-          <img src="../../../public/assets/19.jpeg" className="w-30" />
+
+          <img src={img19} className="w-24 h-24 object-cover" />
         </div>
       </Button>
     </div>
